@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   # devise_for :models
   resources :listings
 
-  get 'page/about'
+  get "page/about"
 
-  get 'page/contact'
+  get "page/contact"
 
   root 'listings#index'
 
