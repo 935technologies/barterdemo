@@ -2,7 +2,6 @@
   <div class="row">
     <% @listings.each do |listing| %>
       <div class="col-md-3">
-
         <div class="thumbnail">
             <%= image_tag listing.image.url %>
             <div class="caption">
@@ -19,10 +18,10 @@
       <% end %>
   </div>
 </div>
-
+  
 <p id="notice"><%= notice %></p>  
 
 
 <br>
 
-<%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
+<%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %> 
