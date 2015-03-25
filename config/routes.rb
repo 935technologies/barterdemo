@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   resources :listings
 
   get "page/about"
-
   get "page/contact"
+  get 'seller' => "listings#seller"
 
   root 'listings#index'
 
