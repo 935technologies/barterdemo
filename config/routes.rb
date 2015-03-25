@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  
+
   devise_for :users
   # devise_for :models
-  resources :listings
+  resources :listings do 
+    resources :orders
+  end
 
-  get "page/about"
+  get "page/about" 
   get "page/contact"
   get 'seller' => "listings#seller"
 
